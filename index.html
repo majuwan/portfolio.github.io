@@ -1,1 +1,1314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Majuwan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
+    body{
+      width: 100%;
+      margin-left: 0px;
+      overflow-x: hidden;
+      height: auto;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      background-color: #07155121;
+      max-width: 100%;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    .top {
+      --offset: 140px; 
+      position: sticky;
+      bottom: 20px;    
+      z-index: 8;
+      left: 93%;  
+      place-self: end;
+      margin-top: calc(100vh + var(--offset));
+
+      /* visual styling */
+      text-decoration: none;
+      padding: 10px;
+      font-family: sans-serif;
+      color: #fff;
+      background: #071551;
+      border-radius: 10px;
+      white-space: nowrap;
+      box-shadow: 3px 3px 4px #6a6a6a;
+    }
+
+
+    .text-direction .sticy-go-up{
+      text-decoration: none;
+
+    }
+
+
+    .navbar-top{
+      width: 100%;
+      height: 77px;
+      background-color: transparent;
+      position: absolute;
+      margin-left: 55px;
+      margin-top: 47px;
+    }
+
+
+    .navbar-top .favicon{
+      font-family: 'Birthstone Bounce', cursive;
+      font-size: xxx-large;
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+
+    .header{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      box-shadow: 0px 0px 20px #000;
+    }
+
+
+    .header .header-left{
+      width: 100%;
+      padding-top: 55px;
+      background-color: #071551;
+      height: 90vh;
+    }
+
+    .header-left-bg {
+      background-image: url(bg.png);
+      width: 1563px;
+      height: 475px;
+      position: absolute;
+      overflow: hidden;
+      filter: opacity(0.1);
+      margin-left: -2%;
+      margin-top: -576px;
+      transform: rotate(-180deg);
+    }
+
+    .header .header-left .header-left-content{
+      padding: 14% 28% 4% 17%;
+      margin-top: 12vh;
+    }
+
+    .header .header-left .header-left-content .tittle{
+      font-family: 'Lexend', sans-serif;
+      font-size: 44px;
+      font-weight: bold;
+      text-shadow: 0px 0px 10px #2460e3;
+      color: white;
+    }
+
+    .header .header-left .header-left-content .tittle span{
+      font-family: 'Rubik Moonrocks', sans-serif;
+      text-shadow: -6px 4px 0px #551a8b;
+    }
+
+    .header .header-left .header-left-content .tittle-deskripsi{
+      font-family: sans-serif;
+      font-style: italic;
+      font-size: 16px;
+      margin-top: 20px;
+      color: #bbb;
+    }
+
+    .header .header-left .header-left-content .tittle-button{
+      margin-top: 20px;
+    }
+
+    .header .header-left .tittle-button .button-btn{
+      border-radius: 22px;
+      width: 30vh;
+      height: 7vh;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #071551;
+      border: 0px;
+      box-shadow: 0px 5px 18px #121212;
+    }
+
+    .header .header-left .tittle-button .button-btn:hover{
+      box-shadow: 0px 5px 18px #0f2d80;
+      margin-top: -4px;
+      border-radius: 18px;
+      background-color: #551a8bba;
+      color: #fff;
+      border: 0px;
+      transition-timing-function: ease-in;
+      transition: 0.2s;
+    }
+
+    .header .header-right{
+      width: 100%;
+      padding-top: 55px;
+      background-color:#0b2357;
+    }
+
+    .header-sosial {
+      position: absolute;
+      z-index: 0;
+      background-color: aliceblue;
+      width: 321px;
+      height: 30px;
+      border-radius: 0px 10px 50px 0px;
+      grid-template-columns: 56px 10% 10% 10% 10% 10% 10%;
+      column-gap: 10px;
+      align-content: center;
+      align-items: center;
+      padding: 6px;
+      margin-top: 483px;
+      margin-left: 980px;
+      display: grid;
+      box-shadow: 6px 7px 6px #040b2c;
+    }
+
+    .header-sosial .header-sosial-link{
+      font-size: 20px;
+      color: #0b2357;
+    }
+
+    .header-sosial .header-sosial-link:hover{
+      font-size: 25px;
+      color:#071551;
+      text-shadow: 0px 0px 12px lightgrey;
+    }
+
+    .header .header-center{
+      position: absolute;
+      width: 404px;
+      height: 81vh;
+      margin-top: 15.4vh;
+      margin-left: 46%;
+      background-image: url(profil.png);
+      color-interpolation-filters: srgb;
+    }
+
+    .conten{
+      margin: 10% 12% 7% 12%;
+    }
+
+    .conten .about{
+      font-family: 'Lexend';
+      font-size: xxx-large;
+      text-align: center;
+      margin-bottom: 25px;
+      text-shadow: 2px 3px 9px #000000;
+      color: #dee0e8;
+    }
+
+    .conten .about-deskripsi{
+      text-align: center;
+      font-family: system-ui;
+      font-size: 15px;
+    }
+
+    .conten-personaliti{
+      margin: 7% 12% 7% 12%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      column-gap: 10vh;
+      background-color: white;
+      padding: 32px;
+      border-radius: 39px;
+      box-shadow: 0px 0px 26px #707070;
+      margin-bottom: 12%;
+    }
+
+    .conten-personaliti .personaliti .span-1{
+      width: 30%;
+      border-radius: 79px;
+      background-color: white;
+      position: absolute;
+      z-index: 1;
+      margin-left: -90px;
+      margin-top: -14px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 0px 4px #0b2357;
+    }
+
+    .conten-personaliti .personaliti-skil .span-2{
+      width: 30%;
+      border-radius: 79px;
+      background-color: white;
+      position: absolute;
+      z-index: 1;
+      margin-left: 164px;
+      margin-top: -14px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 0px 4px #0b2357;  
+    }
+
+    .conten-personaliti .personaliti .personaliti-tittel{
+      font-family: 'Lexend';
+      color: black;
+      text-shadow: 0px 0px 8px #0b235763;
+      font-size: xx-large;
+    }
+
+    .conten-personaliti .personaliti .personaliti-deskripsi{
+      font-family: system-ui;
+      font-size: large;
+      text-align: justify;
+      margin-top: 2vh;
+      font-weight: 500;
+      white-space: break-spaces;
+    }
+
+    .conten-personaliti .personaliti .personaliti-deskripsi p{
+      margin-bottom: -4vh;
+    }
+
+    .conten-personaliti .personaliti .personaliti-button{
+      margin-top: 20px;
+    }
+
+    .conten-personaliti .personaliti .personaliti-button .button-btn{
+      text-decoration: none;
+      border-radius: 22px;
+      width: 30vh;
+      padding: 11px;
+      border: none;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      display: grid;
+      grid-template-columns: 10% 80%;
+      justify-content: center;
+      box-shadow: 0px 0px 4px #4f5452;
+    }
+
+    .conten-personaliti .personaliti .personaliti-button .button-btn:hover{
+      text-decoration: none;
+      background-color: #071551;
+      color: white;
+      box-shadow: 0px 4px 12px #9398a3;
+      transition-timing-function: ease-in;
+      transition: 0.2s;
+    }
+
+    .personaliti-skil .personaliti-skil-tittel{
+      font-family: 'Lexend';
+      color: black;
+      text-shadow: 0px 0px 8px #0b235763;
+      font-size: xx-large;  
+    }
+
+    .personaliti-skil .personaliti-skil-info{ 
+      margin-top: 13vh; 
+    }
+
+    .personaliti-skil .personaliti-skil-info .circel{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 6px red;
+    }
+
+    .info-text-pie{
+      width: 70%;
+      height: 20%;
+      margin-left: 8%;
+      display: grid;
+      grid-template-columns: 10% 90%;
+    }
+
+    .info-text-pie .span-7{
+      background-color: #dee0e8;
+      width: 100%;
+      height: 20px;
+      border-radius: 0% 100% 0% 100% / 0% 0% 100% 100% ;
+      box-shadow: 3px 3px 3px #8f8f8fc7;
+    }
+    .info-text-pie .span-8{
+      background-color: #dee0e8;
+      padding: 15px;
+      width: 100%;
+      box-shadow: 4px 5px 3px #8f8f8f2e;
+      border-radius: 0px 20px 20px;
+    }
+
+    .span-8 .tittle-span-8{
+      font-family: 'Lexend';
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .span-8 .deskripsi-span-8{
+      font-family: monospace;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .batas{
+      margin-top: 80px;
+    }
+
+    @keyframes move_wave {
+      0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+      }
+      50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+      }
+      100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+      }
+    }
+
+    .waveWrapper {
+      overflow: hidden;
+      position: absolute;
+      z-index: 12;
+      height: 120px;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      top: 520px;
+      margin: auto;
+    }
+    .waveWrapperInner {
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      bottom: -1px;
+
+    /*  My awesome contribution:
+      * Use the hue-rotate CSS3 property to change the background color of the animation!
+      */
+      -webkit-filter: hue-rotate(275deg); /* Safari 6.0 - 9.0 */
+      filter: hue-rotate(275deg);
+    }
+    .bgTop {
+     z-index: 15;
+     opacity: 0.5;
+   }
+   .bgMiddle {
+     z-index: 10;
+     opacity: 0.75;
+   }
+   .bgBottom {
+     z-index: 5;
+   }
+   .wave {
+     position: absolute;
+     left: 0;
+     width: 200%;
+     height: 100%;
+     background-repeat: repeat no-repeat;
+     background-position: 0 bottom;
+     transform-origin: center bottom;
+   }
+   .waveTop {
+     background-size: 50% 100px;
+   }
+   .waveAnimation .waveTop {
+     animation: move-wave 3s;
+     -webkit-animation: move-wave 3s;
+     -webkit-animation-delay: 1s;
+     animation-delay: 1s;
+   }
+   .waveMiddle {
+     background-size: 50% 120px;
+   }
+   .waveAnimation .waveMiddle {
+     animation: move_wave 10s linear infinite;
+   }
+   .waveBottom {
+     background-size: 50% 100px;
+   }
+   .waveAnimation .waveBottom {
+     animation: move_wave 15s linear infinite;
+   }
+   /**/
+
+   .projects{
+     padding: 7% 12% 7% 12%;  
+     background-color: #071551;
+   }
+
+   .projects .projects-tittel{
+     font-family: 'Lexend';
+     font-size: xxx-large;
+     text-align: center;
+     margin-bottom: 25px;
+     text-shadow: 0px 0px 2px #dee0e8;
+     color: #dee0e8;
+   }
+
+   .projects .projects-deskripsi{
+     text-align: center;
+     font-family: system-ui;
+     font-size: 15px;
+     color: #dee0e8;
+   }
+
+   .projects-conten{
+     margin: 7% 12% 12% 12%;
+     display: grid;
+     grid-template-columns: 48% 48%;
+     grid-gap: 4%;
+   }
+
+   /*projek*/
+   .projects-conten .projects-conten-left{
+     height: 40vh;
+     overflow: hidden;
+     border-radius: 50px;
+   }
+
+   .projects-conten-left-images{
+     display: grid;
+     justify-content: center;
+   }
+
+   .img-1{
+     margin-left: -39.5%;
+     width: 36%;
+     height: 51%;
+     justify-self: center;
+     position: absolute;
+     z-index: 2;
+     filter: drop-shadow(0px 0px 2px black);
+   }
+
+   .img-right{
+     margin-left: 39.5%;
+     width: 37%;
+     height: 51%;
+     justify-self: center;
+     position: absolute;
+     z-index: 2;
+     filter: drop-shadow(0px 0px 2px black);
+   }
+
+   .projects-conten-left-images .img-2{
+     width: 74vh;
+     justify-self: center;
+     position: relative;
+     z-index: 1;
+     object-fit: cover;
+     animation: slide 20s infinite;
+   }
+
+   @keyframes slide {
+     0%{ transform:translateY(0px) }
+     10%{ transform:translateY(-200px) }
+     50%{ transform:translateY(-600px) }
+     90%{ transform:translateY(-1440px) }
+     100%{ transform:translateY(0px) }
+   }
+
+   .projects-conten-right-images .img-2 {
+     width: 74vh;
+     justify-self: center;
+     position: relative;
+     z-index: 1;
+     object-fit: cover;
+     animation: slide_ 20s infinite;
+   }
+
+   @keyframes slide_ {
+     0%{ transform:translateY(0px) }
+     10%{ transform:translateY(-200px) }
+     50%{ transform:translateY(-400px) }
+     90%{ transform:translateY(-600px) }
+     100%{ transform:translateY(0px) }
+   }
+
+   .projects-conten-left-images {
+     display: grid;
+     justify-content: center;
+   }
+
+   .projects-conten-right-images {
+     display: grid;
+     justify-content: center;
+   }
+
+   .projects-conten .projects-conten-right{ 
+     background-color: white;
+     padding: 20px;
+     border-radius: 25px;
+     box-shadow: 0px 0px 8px #071551;
+   }
+
+   .projects-conten-left-tittle{
+     font-family: 'Lexend';
+     font-size: medium;
+     padding-left: 10px;
+     margin-bottom: 25px;
+     color: #071551;
+     position: absolute;
+     width: 300px;
+     background: white;
+     height: 35px;
+     display: grid;
+     align-items: center;
+     border-radius: 15px;
+     margin-left: -58px;
+     box-shadow: 0px 0px 4px #071551;
+   }
+
+   .projects-conten-left-deskripsi{
+     margin-top: 45px;
+     font-family: monospace;
+     font-size: 15px;
+     color: #071551;
+     height: 170px;
+     display: grid;
+     align-content: center;
+     overflow: hidden;
+   }
+
+
+   .projects-conten-right-tittle-1{
+     font-family: 'Lexend';
+     font-size: medium;
+     padding: 5px;
+     margin-bottom: 25px;
+     text-align: left;
+     color: #071551;
+     position: absolute;
+     width: 300px;
+     background: white;
+     height: 35px;
+     display: grid;
+     align-items: center;
+     border-radius: 15px;
+     margin-left: 190px;
+     box-shadow: 0px 0px 4px #071551;
+   }
+
+   .footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #071551;
+    padding: 5vh;
+    overflow: hidden;
+  }
+
+  .footer .footer-baground {
+    background-color: #dee0e8;
+    width: 1523px;
+    height: 254px;
+    border-bottom-right-radius: 327%;
+    border-bottom-left-radius: 148%;
+    position: absolute;
+    margin-left: -51px;
+    margin-top: -48px;
+  }
+
+  .footer .footer-baground-line {
+    width: 1523px;
+    height: 221px;
+    border-bottom-right-radius: 600%;
+    border-bottom-left-radius: 176%;
+    position: absolute;
+    margin-left: -51px;
+    margin-top: -60px;
+    border-bottom: 8px double #a1a1a1;
+    border-right: 10px solid #a1a1a1;
+    border-left: 11px double #a1a1a1;
+    box-shadow: -10px 90px 18px #0b0b3a;
+  }
+
+  .footer .footer-logo{
+    position: absolute;
+    z-index: 2;
+    font-family: 'Birthstone Bounce', cursive;
+    font-size: xxx-large;
+    color: #dee0e8;
+    display: grid;
+    justify-content: end;
+    width: 94%;
+    margin-top: 10%;
+  }
+
+  .footer .footer-logo-1{
+    position: absolute;
+    z-index: 2;
+    font-family: monospace;
+    font-size: medium;
+    color: #dee0e8;
+    display: grid;
+    justify-content: end;
+    margin-top: 14%;
+    width: 93%;
+  }
+
+  .footer .footer-meida {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    width: 250px;
+    grid-template-columns: 13% 13% 13% 13% 13% 13%;
+    grid-gap: 9px;
+    margin-top: 143px;
+    text-align: center;
+    margin-left: 183px;
+    font-size: larger;
+    background: #a1a1a1;
+    height: 39px;
+    justify-content: center;
+    border-radius: 14px;
+    align-items: center;
+  }
+
+  .footer .footer-sosial-link{
+    color: #dee0e8;
+    text-decoration: none;
+  }
+
+  .footer .footer-sosial-link:hover{
+    color: #0b0b3a;
+    font-size: large;
+    text-shadow: 2px 2px 5px #424242;
+  }
+
+  /*---------------------------------------------------------------------------------*/
+  @media (max-width: 768px) {
+    .waveWrapper {
+      top: 79%;
+    }
+
+    .header {
+      grid-template-columns: 80% 20%;
+    }
+
+    .header-left-bg {
+      width: 120vh;
+      height: 49vh;
+      margin-left: -8vh;
+      margin-top: -9vh;
+    }
+
+    .header-sosial{
+      display: none;
+    }
+
+    .header .header-left .header-left-content {
+      position: absolute;
+      margin-top: 10vh;
+      padding: 0%;
+      margin-right: 66vh;
+    }
+    .header .header-left .header-left-content .tittle {
+      margin-left: 55px;
+    }
+    .header .header-left .header-left-content .tittle-deskripsi {
+      width: 64%;
+      margin-left: 55px;
+    } 
+    .header .header-left .header-left-content .tittle-button {
+      margin-left: 55px;
+    }
+    .header .header-left .tittle-button .button-btn {
+      width: 25vh;
+    }
+
+    .header .header-left .tittle-button .button-btn:hover {
+      margin-left: 0px;
+    }
+
+    .conten {
+      width: 83%;
+      margin: 22% 0% 0% 10%;
+    }
+
+    .conten-personaliti {
+      grid-template-columns: 100%;
+      width: 70%;
+      margin: 10% 0% 10% 10%;
+    }
+
+    .conten-personaliti .personaliti .span-1 {
+      width: 75%;
+      margin-left: -60px;
+    }
+
+    .conten-personaliti .personaliti-skil .span-2 {
+      width: 70%;
+      margin-left: -60px;
+      margin-top: -10px;
+    }
+
+    .conten-personaliti .personaliti .personaliti-button {
+      margin-bottom: 40px;
+    }
+
+    .info-text-pie {
+      width: 85%;
+      height: 10%;
+      margin-top: 0px;
+      grid-template-columns: 7% 82%;
+    }
+    .span-8 .tittle-span-8 {
+      font-size: 15px;
+    }
+    .span-8 .deskripsi-span-8 {
+      font-size: 12px;
+    }
+
+    .batas {
+      margin-top: 20px;
+    }
+
+    .personaliti-skil{
+      margin-bottom: 51px;
+    }
+
+    .projects-conten {
+      grid-template-columns: 100%;      
+      grid-gap: 20%;
+      margin-bottom: 40%;
+    }
+
+    .projects-conten .projects-conten-left {
+      border-radius: 20px;
+    }
+
+    .img-1 {
+      margin-left: 0%;
+      width: 79%;
+    }
+
+    .projects-conten-left-tittle {
+      margin-left: -50px;
+    }
+
+    .projects-conten-right-tittle-1 {
+      margin-left: 65px;
+    }
+
+    .img-right {
+      margin-left: 0%;
+      margin-top: 74%;
+      width: 80%;
+    }
+
+    .projects-conten-left-images .img-2{
+      animation: slide 20s infinite;
+    }
+
+    @keyframes slide {
+      0%{ transform:translateY(0px) }
+      10%{ transform:translateY(-200px) }
+      50%{ transform:translateY(-600px) }
+      90%{ transform:translateY(-1400px) }
+      100%{ transform:translateY(0px) }
+    }
+
+    .footer .footer-baground {
+      width: 105%;
+      margin-left: -8%;
+    }
+
+    .footer .footer-baground-line {
+      margin-left: -11%;
+      width: 105%;
+    }
+
+    .footer .footer-meida {
+      width: 5%;
+      grid-template-columns: 100%;
+      height: 153px;
+      padding: 5px;
+      margin-left: -5%;
+      grid-gap: 3px;
+      margin-top: 4.4vh;
+    }
+
+    .footer .footer-logo {
+      width: 36%;
+      margin-top: 11%;
+      color: #0b0b3a;
+    }
+
+    .footer .footer-logo-1 {
+      margin-top: 22%;
+      width: 34%;
+      color: #0b0b3a;
+    }
+    .top {
+      left: 90%;
+    }
+  }
+
+  .title-info-deskripsi{
+    padding: 10px;
+    font-size: 13px;
+    color: #071551;
+  }
+  .img-1-r{
+    margin-left: 39.5%;
+    width: 36%;
+    height: 51%;
+    justify-self: center;
+    position: absolute;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 2px black);
+  }
+
+  .info{
+    background-color: #ffffff99;
+    margin-left: -39.5%;
+    margin-top: 17px;
+    width: 447px;
+    height: 229px;
+    justify-self: center;
+    position: absolute;
+    z-index: 3;
+    filter: drop-shadow(0px 0px 12px black);
+    display: none;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-right{
+    background-color: #ffffff99;
+    margin-left: 39.5%;
+    margin-top: 17px;
+    width: 447px;
+    height: 229px;
+    justify-self: center;
+    position: absolute;
+    z-index: 3;
+    filter: drop-shadow(0px 0px 12px black);
+    display: none;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-info{
+    font-family: 'Lexend';
+    color: #071551;
+    font-size: x-large;
+    text-shadow: 0px 0px 5px white;
+  }
+
+  .title-info-right{
+    font-family: 'Lexend';
+    color: #071551;
+    font-size: x-large;
+    text-shadow: 0px 0px 5px white;
+  }
+
+  .view-detail{
+    background-color: #0b0b3a;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: monospace;
+    border-radius: 19px;
+    padding: 6px;
+  }
+
+  .view-detail-right{
+    background-color: #0b0b3a;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: monospace;
+    border-radius: 19px;
+    padding: 6px;
+  }
+
+  .view-detail:hover{
+    background-color: #00000000;
+    color: #0b0b3a;
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 19px;
+    padding: 6px;
+  }
+
+  .view-detail-right:hover{
+    background-color: #00000000;
+    color: #0b0b3a;
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 19px;
+    padding: 6px;
+  }
+
+  .back-to-home{
+    font-family: monospace;
+    margin: 20px 0px 20px 78px;
+  }
+  .back-to-home a{
+    text-decoration: none;
+    color: #071551;
+    font-size: larger;
+  }
+  .back-to-home span{
+    color: #575757;
+  }
+
+  @media (max-width: 768px) {
+    .img-1-r{
+      margin-left: 0%;
+      margin-top: 74%;
+      width: 78%;
+    }
+    .info{
+      margin-left: 0%;
+      width: 350px;
+      height: 223px;
+    }
+    .info-right {
+      margin-left: 0%;
+      margin-left: 0;
+      margin-top: 77.5%;
+      width: 348px;
+      height: 223px;
+    }
+    .title-info {
+      font-size: medium;
+    }
+    .title-info-right{
+     font-size: medium; 
+   }
+ }
+</style>
+</head>
+<body>
+
+  <div class="navbar-top">
+    <a class="favicon" href="">Portfolio</a>
+  </div>
+  <div class="header">
+    <div class="header-left">
+      <div class="header-left-content">
+        <div class="tittle">Hallo,</div>
+        <div class="tittle">Saya <span>M</span>uhammad,</div>
+        <div class="tittle">Majuwan Siregar.</div>
+        <div class="tittle-deskripsi">Lulusan Teknik Informatika dan Frelance Web Developer</div>
+      </div>
+      <div class="header-left-bg"></div>
+    </div>
+    <div class="header-right"></div>
+    <div class="header-sosial">
+      <a href="" class="header-sosial-link"></a>
+      <a href="https://www.instagram.com/juwan_1003/" class="header-sosial-link"><i class="fa-brands fa-instagram fa-shake"></i></a>
+      <a href="https://www.facebook.com/majuwan.siregar/" class="header-sosial-link"><i class="fa-brands fa-facebook-f fa-shake"></i></a>
+      <a href="https://www.tiktok.com/@cap_offline/" class="header-sosial-link"><i class="fa-brands fa-tiktok fa-shake"></i></a>
+      <a href="https://wa.link/6gki54" class="header-sosial-link"><i class="fa-brands fa-whatsapp fa-shake"></i></a>
+      <a href="mailto:ajwanirek01@gmail.com" class="header-sosial-link"><i class="fa-solid fa-envelope fa-shake"></i></a>
+      <a href="https://www.linkedin.com/in/muhammad-majuwan-siregar-7089b31ba/" class="header-sosial-link"><i class="fa-brands fa-linkedin fa-shake"></i></a>
+    </div>
+    <div class="header-center"></div>
+  </div>
+
+  <div class="conten">
+    <div data-aos="fade-down" class="about">Tentang Saya</div>
+    <div data-aos="fade-down" class="about-deskripsi">Di sini Anda akan menemukan lebih banyak informasi tentang saya, apa yang saya lakukan, dan keterampilan saya saat ini, sebagian besar di bidang pemrograman dan teknologi.</div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="conten-personaliti">
+    <div class="personaliti">
+      <div data-aos="zoom-out-right" class="span-1"><div class="personaliti-tittel">My Biography.!</div></div>
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="personaliti-deskripsi">
+        <p>Saya seorang lulusan Teknik Informatika dan freelance Web developer yang membangun Front-end, Back-end, Database dan DevOps yang mengarah pada pengembangan produk yang dibutuhkan. Saya telah menyelesaikan beberapa proyek memakai framework codeigniter.</p>
+        <p>Tentunya saya juga suka berbagi ilmu terkait hal-hal yang telah saya pelajari terhitung selama tahun 2022 sampai sekarang di bidang pengembangan dan pembuatan website sehingga dapat membantu orang lain. jangan ragu untuk mengubungi saya serta Ikuti saya di berbagai media sosial.</p>
+        <p>Saya terbuka terhadap peluang kerja di mana saya dapat berkontribusi, belajar dan berkembang. Jika Anda memiliki peluang bagus yang sesuai dengan keahlian dan pengalaman saya, jangan ragu untuk menghubungi saya.</p>
+      </div>
+      <div class="personaliti-button">
+        <a href="https://drive.google.com/file/d/1CUjH-8Mtgy08alRRwZin9Cw_KeOwMFaD/view?usp=sharing" class="button-btn"><i class="fa-solid fa-file-pdf"></i>curriculum vitae</a>
+      </div>
+    </div>
+    <div class="personaliti-skil">
+      <div data-aos="zoom-out-left" class="span-2"><div class="personaliti-skil-tittel">My Skills.!</div></div>
+      <div class="personaliti-skil-info">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-center" class="pie-chart">
+      </div>
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="top-center" class="info-text-pie">
+      <div class="span-7"></div>
+      <div class="span-8">
+        <div class="tittle-span-8 scroll-left">Back-End</div>
+        <div class="deskripsi-span-8">Php, Sql, Rest API</div>
+        <hr>
+        <div class="tittle-span-8">Database</div>
+        <div class="deskripsi-span-8">sql, mySql</div>
+      </div>
+    </div>
+    <div class="batas"></div>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="pie-chart">
+    </div>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="info-text-pie">
+      <div class="span-7"></div>
+      <div class="span-8">
+        <div class="tittle-span-8">Front-End</div>
+        <div class="deskripsi-span-8"><strong>Basic</strong><i> (HTML, CSS, JAVASCRIPT).</i></div>
+        <div class="deskripsi-span-8"><strong>DevOps</strong><i> (CodeIgniter). </i></div>
+        <div class="deskripsi-span-8"><strong>Style</strong><i> (Bootsrap).</i></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
+</div>
+<div class="waveWrapper waveAnimation" style="transform: rotate(180deg);margin-top: 124px;z-index: 12;">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
+</div>
+<div data-aos="fade-up"data-aos-anchor-placement="top-center" class="projects">
+  <div class="projects-tittel" id="projects">PROJECTS</div>
+  <div class="projects-deskripsi">Di sini saya menampilkan proyek pribadi dan klien yang saya buat berdasarkan riwayat pekerjaan saya.</div>
+</div>
+
+<div class="projects-conten"> 
+  <div class="info" id="info"onmouseover="info(this)" onmouseout="clearCoor(this)"> 
+    <div class="title-info"><center>COMPANY PROFILE</center></div> 
+    <div class="title-info-deskripsi"><center>Projects terbaru saya berperan sebagai membagun Company Profile KORMI provinsi jambi yang dimana dalam pembuatan tersebut menggunakan Framewok CodeIgniter 4 yang tehubung dengan database serta fitur yang disertakan CRUD kebutuhan data, Halaman Admin dan Halaman Company, dan fitur login didalam pengerjaan tersebut saya lakukan dalam kurun waktu 1 minggu menyesuaikan kebutuhan data.</center></div> 
+    <center> <a href="../Lib/company-profile-1.html" class="view-detail">Lihat</a></center> 
+  </div>
+  <img data-aos="zoom-out-right" class="img-1" src="pc-1.png" alt="" onclick="info(this)" onmouseout="clearCoor(this)"> 
+  <div data-aos="zoom-out-right" class="projects-conten-left"> 
+    <div class="projects-conten-left-images"> 
+      <img class="img-2"
+      src="p-1-1.png" alt=""> 
+      <img class="img-2" src="p-1-2.png" alt=""> 
+      <img class="img-2" src="p-1-3.png" alt=""> 
+      <img class="img-2" src="p-1-4.png" alt=""> 
+      <img class="img-2" src="p-1-5.png" alt=""> 
+      <img class="img-2" src="p-1-6.png" alt=""> 
+      <img class="img-2" src="p-1-7.png" alt="">
+      <img class="img-2" src="p-1-8.png" alt=""> 
+      <img class="img-2"  src="p-1-9.png" alt=""> 
+    </div> 
+  </div> 
+  <div class="info-right" id="info-right" onmouseover="right(this)" onmouseout="clearRight(this)"> 
+    <div class="title-info-right"><center>LAYANAN ADMINISTRASI</center></div> 
+    <div class="title-info-deskripsi"><center>Projects terbaru saya berperan sebagai membagun Pengolahan data layan administrasi surat menyurat mahasiswa. Sistem yang dibuat dapat membantu BAAK dalam meningkatkan pelayanan administrasi surat menyurat yang lebih baik dan lebih cepat, sehingga mahasiswa dapat menerima pelayanan yang lebih baik yang dimana dalam pembuatan tersebut menggunakan Framewok CodeIgniter 4 yang tehubung dengan database serta fitur yang disertakan CRUD kebutuhan data, Halaman Admin dan Halaman Company, dan fitur login by role didalam pengerjaan tersebut saya lakukan dalam kurun waktu 1 minggu menyesuaikan kebutuhan data.</center></div> 
+    <center> <a href="../Lib/company-profile-2.html" class="view-detail-right">Lihat</a></center> </div> 
+    <img data-aos="zoom-out-left" class="img-1-r" src="pc-1.png" alt="" onclick="right(this)" onmouseout="clearRight(this)">
+    <div data-aos="zoom-out-left" class="projects-conten-left"> 
+      <div class="projects-conten-right-images"> 
+        <img class="img-2" src="p-2-1.png" alt=""> 
+        <img class="img-2" src="p-2-2.png" alt=""> 
+        <img class="img-2" src="p-2-3.png" alt=""> 
+        <img class="img-2" src="p-2-4.png" alt=""> 
+      </div> 
+    </div> 
+  </div>
+
+  <div class="projects-conten">
+    <div class="info" id="info_" onmouseover="info_(this)" onmouseout="clearCoor_(this)">
+      <div class="title-info"><center>LAYANAN ADMINISTRASI</center></div>
+      <div class="title-info-deskripsi"><center>Projects terbaru saya berperan sebagai membagun Pengolahan data layan administrasi Penjawdalan yang dilakukan oleh Laboratorium sistem pendaftaran dan juga informasi jadwal pelaksanaan praktikum  secara online sehingga siswa tidak lagi ketinggalan informasi daftar dan jadwal praktikum yang dimana dalam pembuatan tersebut menggunakan Framewok CodeIgniter 4 yang tehubung dengan database serta fitur yang disertakan CRUD kebutuhan data, Halaman Admin dan Halaman Company, dan fitur login by role didalam pengerjaan tersebut saya lakukan dalam kurun waktu 1 minggu menyesuaikan kebutuhan data.</center></div> 
+      <center><a href="../Lib/company-profile-3.html" class="view-detail">Lihat</a></center>
+    </div>
+    <img data-aos="zoom-out-right" class="img-1" src="pc-1.png" alt="" onclick="info_(this)" onmouseout="clearCoor_(this)">
+    <div data-aos="zoom-out-right" class="projects-conten-left">
+      <div class="projects-conten-left-images">
+        <img class="img-2" src="p-3-1.png" alt="">
+        <img class="img-2" src="p-3-2.png" alt="">
+        <img class="img-2" src="p-3-3.png" alt="">
+        <img class="img-2" src="p-3-4.png" alt="">
+        <img class="img-2" src="p-3-5.png" alt="">
+        <img class="img-2" src="p-3-6.png" alt="">
+        <img class="img-2" src="p-3-7.png" alt="">
+        <img class="img-2" src="p-3-8.png" alt="">
+        <img class="img-2" src="p-3-9.png" alt="">
+      </div>
+    </div>
+    <div class="info-right" id="info-right_" onmouseover="right_(this)" onmouseout="clearRight_(this)">
+      <div class="title-info-right"><center>LAYANAN ADMINISTRASI</center></div>
+      <div class="title-info-deskripsi" style="font-size: 12px;"><center>Projects terbaru saya berperan sebagai membagun Pengolahan data layanan laporan kinerja unit kegiatan mahasiswa dan himpunan mahasiswa, sistem informasi pengolahan data laporan kinerja unit kegiatan mahasiswa dan himpunan mahasiswa ini, dapat digunakan untuk mengelolah informasi, menerima informasi dan memproleh informasi yang bermanfaat dan dapat digunakan menjadi media tambahan untuk membantu dan memproses pengolahan data laporan kinerja unit kegiatan mahasiswa dan himpunan mahasiswa yang dimana dalam pembuatan tersebut menggunakan Framewok CodeIgniter 4 yang tehubung dengan database serta fitur yang disertakan CRUD kebutuhan data, Halaman Admin dan Halaman Company, dan fitur login by role didalam pengerjaan tersebut menyesuaikan kebutuhan data.</center></div> 
+      <center><a href="../Lib/company-profile-4.html" class="view-detail-right">Lihat</a></center>
+    </div>
+    <img data-aos="zoom-out-left" class="img-1-r" src="pc-1.png" alt="" onclick="right_(this)" onmouseout="clearRight_(this)">
+    <div data-aos="zoom-out-left" class="projects-conten-left">
+      <div class="projects-conten-left-images">
+        <img class="img-2" src="p-4-1.png" alt="">
+        <img class="img-2" src="p-4-2.png" alt="">
+        <img class="img-2" src="p-4-3.png" alt="">
+        <img class="img-2" src="p-4-4.png" alt="">
+        <img class="img-2" src="p-4-5.png" alt="">
+        <img class="img-2" src="p-4-6.png" alt="">
+        <img class="img-2" src="p-4-7.png" alt="">
+        <img class="img-2" src="p-4-8.png" alt="">
+        <img class="img-2" src="p-4-9.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-conten">
+    <div class="info" id="info__" onmouseover="info__(this)" onmouseout="clearCoor__(this)">
+      <div class="title-info"><center>COMPANY PROFILE</center></div>
+      <div class="title-info-deskripsi" style="font-size: 12px;"><center>Projects terbaru saya berperan sebagai membagun Company Profile Unit kegiatan Mahasiswa Korps Sukarela Palang Merah Indonesia yang dimana dalam pembuatan tersebut menggunakan Framewok CodeIgniter 4 yang tehubung dengan database serta fitur yang disertakan CRUD kebutuhan data, Halaman Admin dan Halaman Company, dan fitur login didalam pengerjaan tersebut menyesuaikan kebutuhan data.</center></div> 
+      <center><a href="../Lib/company-profile-5.html" class="view-detail">Lihat</a></center>
+    </div>
+    <img data-aos="zoom-out-right" class="img-1" src="pc-1.png" alt="" onclick="info__(this)" onmouseout="clearCoor__(this)">
+    <div data-aos="zoom-out-right" class="projects-conten-left">
+      <div class="projects-conten-right-images">
+        <img class="img-2" src="p-5-1.png" alt="">
+        <img class="img-2" src="p-5-2.png" alt="">
+        <img class="img-2" src="p-5-3.png" alt="">
+        <img class="img-2" src="p-5-4.png" alt="">
+        <img class="img-2" src="p-5-5.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="info-right" id="info-right_" onmouseover="right_(this)" onmouseout="clearRight_(this)">
+      <div class="title-info-right"><center>LAYANAN ADMINISTRASI</center></div>
+      <center><a href="" class="view-detail-right">Lihat</a></center>
+    </div>
+    <img data-aos="zoom-out-left" class="img-1-r" src="pc-1.png" alt="" onclick="right_(this)" onmouseout="clearRight_(this)">
+    <div data-aos="zoom-out-left" class="projects-conten-left">
+      <div class="projects-conten-left-images">
+        <img class="img-2" src="p-4-1.png" alt="">
+        <img class="img-2" src="p-4-2.png" alt="">
+        <img class="img-2" src="p-4-3.png" alt="">
+        <img class="img-2" src="p-4-4.png" alt="">
+        <img class="img-2" src="p-4-5.png" alt="">
+        <img class="img-2" src="p-4-6.png" alt="">
+        <img class="img-2" src="p-4-7.png" alt="">
+        <img class="img-2" src="p-4-8.png" alt="">
+        <img class="img-2" src="p-4-9.png" alt="">
+      </div>
+    </div> -->
+  </div>
+</div>
+<a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat"></i></a>
+
+<div class="footer">
+  <div class="footer-baground"></div>
+  <div class="footer-baground-line"></div>
+  <div class="footer-logo-1">Portfolio</div>
+  <div class="footer-logo">Majuwan</div>
+  <div class="footer-meida">
+    <a href="https://www.instagram.com/juwan_1003/" class="footer-sosial-link"><i class="fa-brands fa-instagram fa-beat"></i></a>
+    <a href="https://www.facebook.com/majuwan.siregar/" class="footer-sosial-link"><i class="fa-brands fa-facebook-f fa-beat" ></i></a>
+    <a href="https://www.tiktok.com/@cap_offline/" class="footer-sosial-link"><i class="fa-brands fa-tiktok fa-beat" ></i></a>
+    <a href="https://wa.link/6gki54" class="footer-sosial-link"><i class="fa-brands fa-whatsapp fa-beat" ></i></a>
+    <a href="mailto:ajwanirek01@gmail.com" class="footer-sosial-link"><i class="fa-solid fa-envelope fa-beat" ></i></a>
+    <a href="https://www.linkedin.com/in/muhammad-majuwan-siregar-7089b31ba/" class="footer-sosial-link"><i class="fa-brands fa-linkedin fa-beat" ></i></a>
+  </div>
+</div>
+
+<script type="text/javascript" src="../asset/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script type="text/javascript">
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("<mark>header</mark>").classList.remove('show');
+    }
+    else { document.getElementById("<mark>header</mark>").classList.add('show');
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+function info(e) {
+  document.getElementById("info").style.display = 'grid';
+}
+
+function info(i) {
+  document.getElementById("info").style.display = 'grid';
+}
+
+function clearCoor(x) {
+  document.getElementById("info").style.display = 'none';
+}
+
+// 
+
+function right(e) {
+  document.getElementById("info-right").style.display = 'grid';
+}
+
+function right(i) {
+  document.getElementById("info-right").style.display = 'grid';
+}
+
+function clearRight(x) {
+  document.getElementById("info-right").style.display = 'none';
+}
+
+// ----------------------
+
+function info_(e) {
+  document.getElementById("info_").style.display = 'grid';
+}
+
+function info_(i) {
+  document.getElementById("info_").style.display = 'grid';
+}
+
+function clearCoor_(x) {
+  document.getElementById("info_").style.display = 'none';
+}
+
+// ----------------
+
+function right_(e) {
+  document.getElementById("info-right_").style.display = 'grid';
+}
+
+function right_(i) {
+  document.getElementById("info-right_").style.display = 'grid';
+}
+
+function clearRight_(x) {
+  document.getElementById("info-right_").style.display = 'none';
+}
+
+// -----------------------
+
+function info__(e) {
+  document.getElementById("info__").style.display = 'grid';
+}
+
+function info__(i) {
+  document.getElementById("info__").style.display = 'grid';
+}
+
+function clearCoor__(x) {
+  document.getElementById("info__").style.display = 'none';
+}
+</script>
+</body>
+</html>
